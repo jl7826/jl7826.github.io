@@ -1,0 +1,253 @@
+body{
+  font-family: 'Merriweather', serif;
+  background-color: black;
+  color: white;
+}
+
+nav{
+  text-align: center;
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  position: fixed; /*stays fixed even with scrolling*/
+  top: 0; /*gets rid of the top gap*/
+  left: 0;
+}
+
+/* css for each list items*/
+.nav_wrapper li{
+  display: inline; /*horizontal placing*/
+  margin : 30px;
+}
+
+.nav_wrapper a{
+  color: white;
+  text-decoration: none;
+}
+
+.nav_wrapper a:hover{
+  background-color: red;
+  color: black;
+  padding: 14px 35px;
+}
+
+/* a gap between each section  */
+.space{
+  display: block;
+  height: 10px;
+  width: 100%;
+  background-color: black;
+}
+
+/* //////////////////////////////////////// */
+#evanglion{
+  padding: 20px 40px;
+  background-color: black;
+  height: 450px;
+  border: 3px solid white;
+  margin-top: 50px;
+}
+
+#p_eva{
+  position: relative;
+  width: 50%;
+  top: 20px;
+}
+
+#img_eva{
+  position: absolute;
+  width: 65.5%;
+  max-height: 400px;
+  top:22.5%;
+  left: 32%;
+}
+
+#link_eva{
+  position:absolute;
+  top: 50%;
+}
+
+#link_eva a{
+  text-decoration: none;
+}
+
+/* //////////////////////////////////////// */
+#nerv{
+  padding: 20px 40px;
+  height: 500px;
+  border: 3px solid white;
+  margin-top: 50px;
+}
+
+#p_nerv::after{ /*LL*/
+  content: "";
+  background: url("nerv.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0; /*LL*/
+}
+
+#p_nerv{
+  position: relative;
+  top: 5px;
+  left: 515px;
+  width: 45%;
+}
+
+#geofront{
+  position: relative;
+  /* border: 3px solid white; /*guide */ */
+  width: 50%;
+  top: -370px;
+}
+
+#nerv img{
+  position: relative;
+  width: 100%;
+}
+
+#p_geo{
+  position: relative;
+  text-align: center;
+}
+/* //////////////////////////////////////// */
+#pilot{
+  padding: 20px 40px;
+  background-color: black;
+  height: 750px;
+  border: 3px solid white;
+  margin-top: 50px;
+}
+
+#img_gr_pil{
+  /* border: 3px solid blue; */
+  position: relative;
+  max-height: 750px;
+  top: 20px;
+}
+
+.container{
+  position: relative;
+  width: 26%;
+  max-height: 700px;
+  margin: 31px;
+  display: inline-block;
+  /* border: 3px solid white;*/
+}
+
+.img_pil{
+  display: block;
+  width: 100%;
+  max-height:700px;
+}
+
+.overlay{
+  position: absolute;
+  transition: all .3s ease; /*LL*/
+  opacity: 0; /* sets smth like a keyframe */
+  background-color: green;
+}
+
+/* animation final key frame */
+.container:hover .overlay{
+  opacity: 1
+}
+
+.text{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*LL*/
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Shinji (blue)*/
+.overlayFadeS{
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  background-color: #0000ff78;
+}
+
+/* Asuka (red)*/
+.overlayFadeA{
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  background-color: #ff000078;
+}
+
+/* Mari (pink)*/
+.overlayFadeM{
+  height: 100%;
+  width: 100%;
+  top:0;
+  left:0;
+  background-color: #ffc0cba3;
+}
+
+/* //////////////////////////////////////// */
+#media{
+  padding: 20px 40px;
+  background-color: black;
+  height: 750px;
+  border: 3px solid white;
+  margin-top: 50px;
+}
+
+/* Group of all images */
+.img_gr_md{
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  /* border: 3px solid white; */
+}
+
+/* grp of each text and image */
+.text_img{
+  display: inline-block;
+  width: 20%;
+  height: 25%;
+  margin: 15px;
+  /* border: 3px solid white; */
+}
+
+.img_md{
+  width: 80%;
+  margin: 20px;
+}
+
+.title{
+  width: 100%;
+  margin-top: -15px;
+}
+
+/* That one text... */
+.title span{
+  font-size: 12px;
+}
+
+/* //////////////////////////////////////// */
+#store{
+  padding: 20px 40px;
+  background-color: black;
+  height: 500px;
+  border: 3px solid white;
+  margin-top: 50px;
+}
+
+iframe{
+  width: 100%;
+  height: 400px;
+}
