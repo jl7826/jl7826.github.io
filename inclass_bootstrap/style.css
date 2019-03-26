@@ -1,0 +1,32 @@
+.container{
+	background-color: grey;
+}
+
+#white{
+	color:white;
+}
+
+#history{
+	border: 3px solid aqua;
+}
+
+#demographics{
+
+	border: 3px solid red;
+}
+
+#government{
+	border: 3px solid #FF00FF;
+}
+
+#carouselExampleControls{
+	width:50%;
+	margin-left:25%;
+}
+/*.btn btn-primary{
+	display:inline-block;
+}*/
+.form-control{
+	display:inline;
+
+}
