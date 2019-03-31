@@ -451,23 +451,24 @@ html{
   width: 610px;
 }
 
-#web_vid{
-  position: absolute;
-  height: 692px;
-  left: 35px;
-}
-
 .carousel_controls{
   position:relative;
-   width:300px;
-   height: 30px;
-   margin:0 auto;
+  width:300px;
+  height: 30px;
+  margin:0 auto;
+  top: -50px;
 }
 
 #carousel_indi{
   position: absolute;
   bottom: 37px;
   z-index: 1;
+}
+
+#web_vid{
+  position: absolute;
+  height: 692px;
+  left: 35px;
 }
 
 .skill_description{
