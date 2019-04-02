@@ -2,6 +2,8 @@ body{
   width: 1366px;
   height: 768px;
   font-family: 'Lato', sans-serif;
+  /* the website is not at all responsive at this point. Works best with a FIXED size indicated by this border */
+  /* border: 1px solid; */
 }
 
 .page_size{
@@ -11,9 +13,9 @@ body{
   margin-left: 45.53px;
   margin-top: 40.53px;
   font-weight: 700;
-
-  /* border: 1px solid; */
 }
+
+/* HOME */
 
 #name{
   position: absolute;
@@ -53,7 +55,7 @@ body{
   right: -170px;
 }
 
-/* CENTER ANIMATION */
+/* CENTER ANIMATION*/
 .home_slider{
   position: absolute;
   width: 871px;
@@ -63,7 +65,6 @@ body{
   margin-top: 150px;
   animation: slide 30s infinite;
 }
-
 @keyframes slide {
   25% {
     background: url(2.jpg);
@@ -79,7 +80,7 @@ body{
   }
 }
 
-/* NAVIGATION */
+/* NAVIGATION*/
 .popup{
   width: 55px;
   height: 45px;
@@ -92,7 +93,6 @@ body{
 
   z-index: 1;
 }
-
 .popup:hover .line{
   background-color: #000000;
 }
@@ -123,7 +123,6 @@ body{
   background-color: #FFFFFF;
   opacity: 0.9;
 }
-
 .menu{
   position: absolute;
   width: 362px;
@@ -131,11 +130,9 @@ body{
   left: 480px;
   top: 230px;
 }
-
 .menu a{
   text-decoration: none;
 }
-
 .menu_it{
   width: 362px;
   height: 50px;
@@ -143,11 +140,9 @@ body{
   font-size: 40px;
   color: #000000;
 }
-
 .menu_it:hover{
   color: #B1B1B1;
 }
-
 #about{
   position: relative;
 }
@@ -200,7 +195,6 @@ body{
   visibility: visible;
   animation: fadeIn 1s;
 }
-
 /* Add animation (fade in the popup) */
 @keyframes fadeIn {
   from {opacity: 0;}
@@ -214,17 +208,15 @@ body{
   top: 30%;
   left: 17%;
 }
-
 #aboutme{
   position: absolute;
   width: 500px;
-  top: 38%;
+  top: 35%;
   left: 48%;
   font-weight: normal;
 }
 
 /* project main pages */
-
 .project_title{
   position: absolute;
   font-size: 100px;
@@ -293,7 +285,6 @@ body{
   opacity: 0;
 }
 
-/* using class for future expansion of the website */
 .coming_soon2:hover .project_menu_text2{
   opacity: 0;
 }
@@ -323,6 +314,7 @@ body{
   opacity: 0.5;
 }
 
+/* scroll animation */
 html{
   scroll-behavior: smooth;
 }
@@ -375,16 +367,24 @@ html{
 /* WORK PAGES (SUB-PROJECT) */
 /* longer page size for work pages */
 #work_size{
-  margin-top: 160px;
-  margin-left: 110px;
+  position: absolute;
+  top: 750px;
+  left: 20px;
   width: 1210px;
   height: 760px;
 }
 
+#page_jump{
+  position: absolute;
+  height: 50px;
+  width: 1366px;
+  top: 750px;
+}
+
 .work_title_container{
   position: absolute;
-  left: 180px;
-  top: 300px;
+  left: 160px;
+  top: 350px;
 
   width: 392px;
   height:88px;
@@ -410,8 +410,8 @@ html{
 
 .skills_container{
   position: absolute;
-  left: 180px;
-  top: 400px;
+  left: 160px;
+  top: 440px;
   font-size: 30px;
   font-weight: normal;
   opacity: 0.5;
@@ -439,9 +439,9 @@ html{
 
 .work_img{
   position: absolute;
-  width: 550px;
-  height:440px;
-  right: 40px;
+  width: 590px;
+  height:480px;
+  right: 0px;
   top: 110px;
   border: 1px solid #B1B1B1;
 }
@@ -451,6 +451,7 @@ html{
   width: 610px;
 }
 
+/* change the position of controls */
 .carousel_controls{
   position:relative;
   width:300px;
@@ -459,35 +460,27 @@ html{
   top: -50px;
 }
 
+/* change the position of indicators */
 #carousel_indi{
   position: absolute;
   bottom: 37px;
   z-index: 1;
 }
 
-#web_vid{
-  position: absolute;
-  height: 692px;
-  left: 35px;
-}
-
+/* skill list and descriptions */
 .skill_description{
   position: absolute;
-  width: 590px;
-  bottom: 220px;
+  width: 550px;
+  bottom: 380px;
   right: 20px;
 }
-#skill_text_default{
-  opacity: 1;
-}
+
 .skill_text{
   position: absolute;
   font-weight: normal;
   width: 100%;
   top: 70px;
   opacity: 0;
-  left: 20px;
-  background-color: white;
 }
 .skill_title{
   position: absolute;
@@ -502,9 +495,18 @@ html{
 .skill_description:hover .skill_title{
   color: #000000;
 }
+
+/* positioning for skill title 2 and 3 (3 skills max) */
 #skill_title2{
   top: -50px;
 }
 #skill_title1{
   top: -100px;
+}
+
+/* WEB DESIGN */
+#web_vid{
+  position: absolute;
+  height: 692px;
+  left: 35px;
 }

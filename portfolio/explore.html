@@ -11,26 +11,30 @@
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css">
 
     <title>exploration.</title>
   </head>
+
   <body>
+    <!-- BORDER WITH MARGIN -->
     <div class="page_size">
 
       <!-- CONTENT STARTS HERE -->
       <div class="project_title">exploration</div>
 
       <div class="project_description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in imperdiet sapien, eu faucibus tellus. Pellentesque elementum eu libero eu vestibulum. Fusce dapibus, dui at scelerisque malesuada, nulla velit aliquet purus, quis condimentum sem diam nec dui. Ut turpis arcu, lobortis eget interdum accumsan, pretium eu massa. Vestibulum egestas tellus sodales porta imperdiet. Phasellus ultricies faucibus nulla et fermentum. Sed et elit non tortor gravida rhoncus ut sit amet massa. Praesent blandit facilisis luctus. Sed pretium dictum nunc, v
+        Currently, I have narrowed down my concentration to graphic and UX design but I can always change my mind and I don’t want to stop seeking new possibilities. This is one of the reasons why I enjoy studying Integrated Digital Media in Tandon. The program makes it easy for students to experience and mix up different areas of digital media. This page is dedicated to works that I created while trying to explore different sectors of digital media. These works are not necessarily related to what I specialize in but I had lots of fun creating them. I hope you enjoy ;)
       </div>
 
       <!-- SCROLL DOWN ICON -->
       <a href="#exploration_size"><img class="scroll_icon" src="scroll.png" alt="upside down arrow icon" width="70px"></a>
 
-      <!-- NAVIGATION -->
+      <!-- NAVIGATION POP UP EFFECT SOURCE: w3school-->
       <div class="popup" onclick="myFunction()">
 
+        <!-- pop up that appears -->
         <span class="popuptext" id="myPopup">
           <div class="menu">
             <a href="about.html" class="menu_link"><p class="menu_it" id="about">about</p></a>
@@ -40,13 +44,12 @@
 
             <!-- ANIMOJI BACKGROUND -->
             <div  class="menu_link"><div class="menu_it" id="home_icon"><img src="home_4.png" alt="animoji of Jei smiling" width="100px"></div></div>
-
             <!-- HOVER TEXT + LINK -->
             <a href="index.html" class="menu_link" id="home"><p id="home_text">home</p></a>
-
           </div>
         </span>
 
+        <!-- hamburger icon -->
         <div class="hamburger">
           <div class="line"></div>
           <div class="line"></div>
@@ -78,6 +81,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Pop up animation JS SOURCE: w3school -->
     <script>
     // When the user clicks on div, open the popup
     function myFunction() {
@@ -85,5 +90,7 @@
       popup.classList.toggle("show");
     }
     </script>
+
   </body>
+  
 </html>
