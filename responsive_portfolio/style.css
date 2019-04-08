@@ -1,0 +1,621 @@
+body{
+  width: 1366px;
+  height: 768px;
+  font-family: 'Lato', sans-serif;
+  /* the website is not at all responsive at this point. Works best with a FIXED size indicated by this border */
+  /* border: 1px solid; */
+}
+
+.page_size{
+  position: relative;
+  width: 1275.64px;
+  height: 687.64px;
+  margin-left: 45.53px;
+  margin-top: 40.53px;
+  font-weight: 700;
+}
+
+/* HOME */
+
+#name{
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+  height: 48px;
+  font-size: 40px;
+}
+#jay{
+  color: #B5B5B5;
+  font-size: 35px;
+}
+#location{
+  width: 200px;
+  position: absolute;
+  left: 280px;
+  font-size: 20px;
+}
+#loading{
+  font-size: 40px;
+  position: absolute;
+  right: 200px;
+  letter-spacing: 5px;
+}
+#random{
+  position: absolute;
+  right: 150px;
+  top: 60px;
+  font-size: 18px;
+  font-weight: normal;
+}
+#korean{
+  font-size: 40px;
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 230px;
+  right: -170px;
+}
+
+/* CENTER ANIMATION*/
+.home_slider{
+  position: absolute;
+  width: 871px;
+  height: 400px;
+  background: url(1.jpg);
+  margin-left: 210px;
+  margin-top: 150px;
+  animation: slide 30s infinite;
+}
+@keyframes slide {
+  25% {
+    background: url(2.jpg);
+  }
+  50% {
+    background: url(3.jpg);
+  }
+  75% {
+    background: url(4.jpg);
+  }
+  100% {
+    background: url(1.jpg);
+  }
+}
+
+/* NAVIGATION*/
+.popup{
+  width: 55px;
+  height: 45px;
+
+  position: relative;
+  position: fixed;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+
+  z-index: 1;
+}
+.popup:hover .line{
+  background-color: #000000;
+}
+
+.hamburger{
+  position: absolute;
+  width: 55px;
+  height: 45px;
+}
+/* the three lines in hamburger */
+.line{
+  width: 100%;
+  height: 20%;
+  background-color: #B1B1B1;
+  margin-bottom: 20%;
+}
+
+/* menu popup */
+.popup .popuptext{
+  position: absolute;
+  /* left: 502px;
+  top: 271px; */
+
+  visibility: hidden;
+
+  width: 1366px;
+  height: 768px;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+}
+.menu{
+  position: absolute;
+  width: 362px;
+  height:200px;
+  left: 480px;
+  top: 230px;
+}
+.menu a{
+  text-decoration: none;
+}
+.menu_it{
+  width: 362px;
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+}
+.menu_it:hover{
+  color: #B1B1B1;
+}
+#about{
+  position: relative;
+}
+#project1{
+  position: absolute;
+  top: 50px;
+}
+#project2{
+  position: absolute;
+  top: 100px;
+}
+#explore{
+  position: absolute;
+  top: 150px;
+}
+
+/* ANIMOJI */
+/* img itself */
+#home_icon{
+  position: absolute;
+  top: 250px;
+  left: 135px;
+  width: 100px;
+  height: 100px;
+}
+/* linked container */
+#home{
+  width: 70px;
+  height: 120px;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  position: absolute;
+  top: 255px;
+  left: 150px;
+}
+/* text "home" */
+#home_text{
+  position: absolute;
+  bottom: -20px;
+  left: 13px;
+  opacity: 0;
+}
+#home:hover #home_text{
+  opacity: 1;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* ABOUT.html */
+#hello{
+  position: absolute;
+  font-size: 150px;
+  top: 30%;
+  left: 17%;
+}
+#aboutme{
+  position: absolute;
+  width: 500px;
+  top: 35%;
+  left: 48%;
+  font-weight: normal;
+}
+
+/* project main pages */
+
+@media screen and (max-width: 1200px) {
+  .page_size{
+    height: 600px;
+  }
+
+  .project_description{
+    display: none;
+  }
+
+  .project_description_res{
+    display: block;
+    width: 50%;
+    margin-left: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body{
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .popup .popuptext{
+    width: 1000%;
+  }
+
+  .menu{
+    position: absolute;
+    width: 75%;
+    height:50%;
+    left: 5%;
+    top: 15%;
+  }
+
+  .menu_it{
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+  }
+
+  .hamburger{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+  }
+
+  .page_size{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-left: 45.53px;
+    margin-top: 40.53px;
+    font-weight: 700;
+  }
+
+  .project_title{
+    display: none;
+  }
+
+  .project_menu{
+    display: none;
+
+  }
+
+  .project_title_res{
+    font-size: 15vw;
+    font-weight: bold;
+    margin-top: 10%;
+  }
+
+  .project_description_res{
+    width: 80%;
+    margin: 30px 10%;
+    margin-bottom: 50px;
+  }
+
+  .work_title_res{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10%;
+    color: #B1B1B1;
+  }
+
+  .work_title_res:hover{
+    color: black;
+    text-decoration: none;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+  .project_title_res{
+    display: none;
+  }
+
+  .work_title_res{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project_description_res{
+    display: none;
+  }
+}
+
+.project_title{
+  position: absolute;
+  font-size: 100px;
+  height: 127px;
+  left: 194px;
+  top: 182px;
+}
+
+.project_description{
+  position: absolute;
+  width: 565px;
+  left: 645px;
+  top: 356px;
+  font-weight: normal;
+}
+
+.project_menu{
+  position: absolute;
+  top: 356px;
+  left: 200px;
+  font-size: 50px;
+  line-height: 50px;
+  color: #B1B1B1;
+}
+
+.project_menu_text1{
+  width: 405.5px;
+  position: absolute;
+  color: #B1B1B1;
+}
+
+.active_pg:hover .project_menu_text1{
+  color: #000000;
+}
+
+.project_menu_text2{
+  width: 405.5px;
+  position: absolute;
+  color: #B1B1B1;
+  top: 50px;
+}
+
+.active_pg:hover .project_menu_text2{
+  color: #000000;
+}
+
+.project_menu_text3{
+  width: 405.5px;
+  position: absolute;
+  color: #B1B1B1;
+  top: 100px;
+}
+
+/* COMMING SOON HOVER EFFECT */
+.coming_soon_text2{
+  width: 405.5px;
+  position: absolute;
+  top: 50px;
+  opacity: 0;
+}
+
+.coming_soon_text3{
+  width: 405.5px;
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+}
+
+.coming_soon2:hover .project_menu_text2{
+  opacity: 0;
+}
+
+.coming_soon2:hover .coming_soon_text2{
+  opacity: 1;
+}
+
+.coming_soon3:hover .project_menu_text3{
+  opacity: 0;
+}
+
+.coming_soon3:hover .coming_soon_text3{
+  opacity: 1;
+}
+
+/* Scroll Down Icon */
+.scroll_icon{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.scroll_icon:hover{
+  opacity: 0.5;
+}
+
+/* scroll animation */
+html{
+  scroll-behavior: smooth;
+}
+
+/* BRAND CONCEPT */
+/* ADD PAGE SPECIFIC CSS HERE */
+
+/* CLIENT WORK */
+#baja_title{
+  font-size: 80px;
+}
+
+/* EXPLORATION */
+#exploration_size{
+  margin-top: 160px;
+  margin-left: 110px;
+  width: 1220.64px;
+  height: 1500px;
+}
+#environment_img{
+  position: absolute;
+  left: 40px;
+  top: 38px;
+}
+#modeling_text{
+  position: absolute;
+  font-size: 60px;
+  transform: rotate(-90deg);
+  left:470px;
+  top: 198px;
+}
+#famicom_vid{
+  position: absolute;
+  left: 620px;
+  top: 460px;
+}
+#su_vid{
+  position: absolute;
+  left: 500px;
+  top: 783px
+}
+#su_title{
+  position: absolute;
+  font-size: 35px;
+  top: 1343px;
+  left: 190px;
+  text-align: right;
+}
+
+/* WORK PAGES (SUB-PROJECT) */
+/* longer page size for work pages */
+#work_size{
+  position: absolute;
+  top: 750px;
+  left: 20px;
+  width: 1210px;
+  height: 760px;
+}
+
+#page_jump{
+  position: absolute;
+  height: 50px;
+  width: 1366px;
+  top: 750px;
+}
+
+.work_title_container{
+  position: absolute;
+  left: 160px;
+  top: 350px;
+
+  width: 392px;
+  height:88px;
+}
+.work_title{
+  font-size: 40px;
+  position: absolute;
+}
+.work_line{
+  position: absolute;
+  border: 0.5px solid #B1B1B1;
+  width: 100%;
+  top: 60px;
+}
+.work_date{
+  position: absolute;
+  top: 65px;
+  right:0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #B1B1B1
+}
+
+.skills_container{
+  position: absolute;
+  left: 160px;
+  top: 440px;
+  font-size: 30px;
+  font-weight: normal;
+  opacity: 0.5;
+  width: 362px;
+
+}
+.skills{
+  height: 50px;
+}
+#skill1{
+  position: absolute;
+}
+#skill2{
+  position: absolute;
+  top: 35px;
+}
+#skill3{
+  position: absolute;
+  top: 70px;
+}
+#skill4{
+  position: absolute;
+  top: 105px;
+}
+
+.work_img{
+  position: absolute;
+  width: 590px;
+  height:480px;
+  right: 0px;
+  top: 110px;
+  border: 1px solid #B1B1B1;
+}
+
+#carouselExampleIndicators{
+  position: absolute;
+  width: 610px;
+}
+
+/* change the position of controls */
+.carousel_controls{
+  position:relative;
+  width:300px;
+  height: 30px;
+  margin:0 auto;
+  top: -50px;
+}
+
+/* change the position of indicators */
+#carousel_indi{
+  position: absolute;
+  bottom: 37px;
+  z-index: 1;
+}
+
+/* skill list and descriptions */
+.skill_description{
+  position: absolute;
+  width: 550px;
+  bottom: 380px;
+  right: 20px;
+}
+
+.skill_text{
+  position: absolute;
+  font-weight: normal;
+  width: 100%;
+  top: 70px;
+  opacity: 0;
+}
+.skill_title{
+  position: absolute;
+  font-size: 40px;
+  right: 0;
+  color: #B1B1B1
+}
+
+.skill_description:hover .skill_text{
+  opacity: 1;
+}
+.skill_description:hover .skill_title{
+  color: #000000;
+}
+
+/* positioning for skill title 2 and 3 (3 skills max) */
+#skill_title2{
+  top: -50px;
+}
+#skill_title1{
+  top: -100px;
+}
+
+/* WEB DESIGN */
+#web_vid{
+  position: absolute;
+  height: 692px;
+  left: 35px;
+}
