@@ -1,0 +1,53 @@
+body{
+  background-color: #B70101;
+}
+
+p{
+  font-size: 20px;
+  font-family: 'Fjalla One', sans-serif;
+  color: #B70101;
+}
+
+#bbc{
+  text-align: right;
+}
+
+.container{
+}
+
+.col{
+  background-color: black;
+  padding: 8px 16px;
+  margin: 5px;
+}
+
+.gallery_container img{
+  width: 300px;
+}
+
+.item5{
+  position: absolute;
+  padding: 8px 16px;
+  background-color: black;
+  height: 100%;
+}
+
+.item5 ul{
+  font-size: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.item5 li a{
+  display: block;
+  text-decoration: none;
+  color: #B70101;
+  font-family: 'Francois One', sans-serif;
+  padding: 8px;
+}
+
+.item5 li a:hover{
+  color: white;
+}
