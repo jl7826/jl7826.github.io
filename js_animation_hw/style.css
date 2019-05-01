@@ -1,0 +1,23 @@
+body{
+  font-family: sans-serif;
+}
+
+#cat{
+  position: relative;
+}
+
+#cat{
+  position: relative;
+}
+
+#crown{
+  position: absolute;
+  width: 150px;
+  top: 10px;
+  transform: rotate(-25deg);
+  opacity: 0;
+}
+
+span:hover {
+  color: pink;
+}
