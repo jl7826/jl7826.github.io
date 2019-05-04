@@ -7,23 +7,12 @@ function closeNav(){
   document.getElementById('nav').style.width = "0%";
 }
 // fullscreen navigation
+
+// this is needed for every animated object
 let isDone = false;
 
-let elem = document.getElementById('img_pos');
-let bounding = elem.getBoundingClientRect();
-
-if (
-	bounding.top >= 0 &&
-	bounding.left >= 0 &&
-	bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-	bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-) {
-	console.log('In the viewport!');
-} else {
-	console.log('Not in the viewport... whomp whomp');
-}
-
-var isInViewport = function (elem) {
+// check if an element is on the viewport
+let isInViewport = function (elem) {
     var bounding = elem.getBoundingClientRect();
     return (
         bounding.top >= 0 &&
@@ -33,7 +22,9 @@ var isInViewport = function (elem) {
     );
 };
 
-console.log(isInViewport(elem));
+
+let elem = document.getElementById('img_pos');
+let bounding = elem.getBoundingClientRect();
 
 elem.style.position = "relative";
 elem.style.opacity = "0";

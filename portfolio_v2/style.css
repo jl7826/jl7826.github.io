@@ -47,6 +47,12 @@ body{
 /* fullscreen navigation */
 
 /* work item page template */
+.gutter{
+  padding: 50px;
+}
+.gutter2{
+  padding-top: 50px;
+}
 /* onload */
 .onload{
   width: 100vw;
@@ -91,10 +97,6 @@ body{
 .work-description{
   position: absolute;
   bottom: 0;
-}
-
-.gutter{
-  padding: 50px;
 }
 
 .des-title{
