@@ -35,6 +35,7 @@ html{
   transition: 0.3;
   font-weight: 700;
 }
+
 .overlay a:hover, .overlay a:focus{
   color: black;
 }
@@ -263,7 +264,7 @@ html{
     display: inherit;
     height: 60vh;
     position: absolute;
-    top: 25vh;
+    top: 200px;
     left: 10px;
   }
 
@@ -273,18 +274,17 @@ html{
 
   .korean{
     transform: none;
-    bottom: 60px;
+    top: 150px;
     left: 25px;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .information{
-    top: 13vh;
-    left: 25px;
+    display: none;
   }
 
   .name{
-    bottom: 5px;
+    top: 100px;
     left: 25px;
   }
 }
@@ -338,7 +338,7 @@ html{
   }
 
   .onload-container{
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
 }
 
@@ -388,7 +388,7 @@ html{
   }
 
   .onload-container{
-    margin-top: 20vh;
+    margin-top: 10vh;
   }
 }
 
