@@ -7,6 +7,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -30,7 +35,7 @@
       </div>
     </div>
 
-    <span class="hamburger" style="cursor:pointer" onclick="openNav()">&#9776</span>
+    <span class="hamburger" style="cursor:pointer" onclick="openNav()">&#9776;</span>
     <!-- fullscreen navigation -->
 
     <!-- Unique Content -->
@@ -38,13 +43,13 @@
     <section class="onload">
 
       <div class="container project-container">
-        <div class="row">
+        <div class="row"  data-aos="fade-right">
           <div class="col-lg-1"></div>
           <div class="col-lg-9">
             <p class="project-title">exploration</p>
           </div>
         </div>
-        <div class="row">
+        <div class="row" data-aos="fade-left">
           <div class="col-lg-4"></div>
           <div class="col-lg-8">
             <p class="project-description">Currently, I have narrowed down my concentration to graphic and UX design but I can always change my mind and I don’t want to stop seeking new possibilities. This is one of the reasons why I enjoy studying Integrated Digital Media in Tandon. The program makes it easy for students to experience and mix up different areas of digital media. This page is dedicated to works that I created while trying to explore different sectors of digital media. These works are not necessarily related to what I specialize in but I had lots of fun creating them. I hope you enjoy ;)</p>
@@ -52,7 +57,7 @@
         </div>
       </div>
 
-      <div class="scroll_icon"">
+      <div class="scroll_icon">
         <p>details</p>
         <a href="#page_jump"><img src="assets/scroll.png" alt="upside down arrow icon" width="70px"></a>
       </div>
@@ -62,7 +67,7 @@
 
     <div class="container">
 
-      <div class="row gutter">
+      <div class="row gutter" data-aos="fade-right">
         <div class="col-lg">
           <img src="assets/environment.jpeg" alt="" width=100%>
         </div>
@@ -70,7 +75,7 @@
           <p class="explore-title">autodesk maya<br>environment modeling</p>
         </div>
       </div>
-      <div class="row gutter">
+      <div class="row gutter" data-aos="fade-left">
         <div class="col-lg-4 order-lg-first order-last">
           <p class="explore-title right-zero">autodesk maya<br>prop modeling</p>
         </div>
@@ -78,7 +83,7 @@
           <video src="assets/famicom.mp4" controls autoplay loop width=100%></video>
         </div>
       </div>
-      <div class="row gutter">
+      <div class="row gutter" data-aos="fade-right">
         <div class="col-lg-7">
           <video src="assets/square_universe.mp4" controls autoplay loop width=100%></video>
         </div>
