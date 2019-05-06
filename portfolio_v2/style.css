@@ -53,6 +53,8 @@ html{
   color: black;
 }
 .hamburger{
+  position: fixed;
+  top: 0;
   font-size: 60px;
   color: #b1b1b1;
   padding-left: 2rem;
@@ -60,7 +62,7 @@ html{
 }
 /* fullscreen navigation */
 
-/* work item page template */
+/* work item page template (logo,keychain,website)*/
 .gutter{
   padding: 50px;
 }
@@ -72,23 +74,19 @@ html{
   width: 100vw;
   height: 100vh;
 }
-
 .onload-container{
-  margin-top: 5%;
+  margin-top: 20vh;
 }
-
 .work-title-container{
   position: absolute;
   bottom: 0;
   line-height: 0.8;
   width: 80%;
 }
-
 .work-title{
   font-weight:700;
   font-size: 50px;
 }
-
 .work-date{
   text-align: right;
 }
@@ -99,20 +97,19 @@ html{
   left: 50%;
   margin-left: -35px;
 }
-
 .scroll_icon p{
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   line-height: 0;
+  color: #b1b1b1;
 }
 /* onload */
 
-/* scroll down */
+/* after scroll */
 .work-description{
   position: absolute;
   bottom: 0;
 }
-
 .des-title{
   font-size: 40px;
   font-weight: 700;
@@ -126,66 +123,54 @@ html{
   font-size: 30px;
   font-weight: 700;
 }
-
 .right-zero{
   position: absolute;
   right: 15px;
 }
 /* exploration page template */
 
-/* project page template */
+/* project page template (brand, client)*/
 .project-container{
-  margin-top: 10%;
+  margin-top: 25vh;
 }
-
 .project-title{
   font-weight: 700;
   font-size: 100px;
 }
-
 .project-title2{
   font-weight: 700;
   font-size: 75px;
 }
-
 .project-description{
   position: absolute;
   right: 0;
   padding-left: 0;
   padding-right: 0;
 }
-
 .work_list{
   font-size: 50px;
   font-weight: 700;
   color: #B1B1B1;
   line-height: 1;
 }
-
 .work_list a{
   text-decoration: none;
 }
-
 .work-item{
   color: #B1B1B1;
 }
-
 .work-item:hover{
   color:black;
 }
-
 .undef-text{
   display: none;
 }
-
 .undef:hover .undef-text{
   display: inherit;
 }
-
 .undef:hover .undef-item{
   display: none;
 }
-
 /* project page template */
 
 /* about */
@@ -193,62 +178,119 @@ html{
   font-size: 180px;
   font-weight: 700;
 }
+.about-margin{
+  margin-top: 35vh;
+}
 /* about */
 
 /* home */
-.home-container{
-  position: absolute;
-  top: 0;
-  left: 65px;
-  margin: 30px;
-  width: 90vw;
-  height: 90vh;
+.slide-color-error{
+  background-color: #fbfbfb;
 }
-
+.slide{
+  position: relative;
+  left: 15vw;
+  top: 25vh;
+  width: 60vw;
+}
+.slide-sm{
+  display: none;
+}
 .information{
   position: absolute;
-  left: 20%;
-  line-height: 0.2;
-  font-weight: 700;
+  top: 4vh;
+  left: 25vw;
+
+
+  line-height: 0.5;
   font-size: 20px;
-}
-
-.name{
-  position: absolute;
-  bottom:0;
   font-weight: 700;
-  font-size: 40px;
 }
-
-.name span{
-  font-size: 35px;
-  color: #b1b1b1
-}
-
 .loading{
   position: absolute;
-  left: 70%;
-  line-height: 0.2;
-  font-weight: 700;
-  font-size: 20px;
-}
+  top: 4vh;
+  right: 10vw;
+  width: 300px;
 
+  line-height: 0.8;
+  font-size: 25px;
+  font-weight: 700;
+}
+.loading p:nth-child(1){
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+.loading p:nth-child(2){
+  position: absolute;
+  right: 0;
+  font-weight: 300;
+}
 .korean{
   position: absolute;
-  font-size: 30px;
-  font-weight: 700;
+  right: -230px;
+  bottom: 40vh;
+
   transform: rotate(-90deg);
-  bottom: 300px;
-  right: -180px;
+
+  font-size: 40px;
+  font-weight: 700;
+}
+.name{
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+
+  font-size: 35px;
+  font-weight: 700;
+}
+.name span{
+  color: #b1b1b1;
+  font-size: 30px;
 }
 
-.slideshow{
-  position: absolute;
-  left: 20%;
-  top: 25%;
+@media screen and (max-width:990px) {
+  .slide{
+    width: 80vw;
+    left: 30px;
+  }
+}
+@media screen and (max-width:400px) {
+  .slide{
+    display: none;
+  }
+
+  .slide-sm{
+    display: inherit;
+    height: 60vh;
+    position: absolute;
+    top: 25vh;
+    left: 10px;
+  }
+
+  .loading{
+    display: none;
+  }
+
+  .korean{
+    transform: none;
+    bottom: 60px;
+    left: 25px;
+    font-size: 30px;
+  }
+
+  .information{
+    top: 13vh;
+    left: 25px;
+  }
+
+  .name{
+    bottom: 5px;
+    left: 25px;
+  }
 }
 /* home */
 
+/* Responsive design */
 @media screen and (max-width: 990px){
   .work-title-container{
     position: inherit;
@@ -295,18 +337,9 @@ html{
     font-size: 60px;
   }
 
-  .home-container{
-    left: 70px;
-    width: 90vw;
-    height: 90vh;
+  .onload-container{
+    margin-top: 10vh;
   }
-
-  .slideshow{
-    left: 0;
-    top: 35%;
-    width: 800px;
-  }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -349,15 +382,23 @@ html{
     font-size: 50px;
     line-height: 1;
   }
+
+  .scroll_icon img{
+    width: 50px;
+  }
+
+  .onload-container{
+    margin-top: 20vh;
+  }
 }
 
+/* fullscreen navigation */
 @media screen and (max-height: 450px) {
-  /* fullscreen navigation */
   .overlay a {font-size: 20px}
   .overlay .closebtn{
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
-  /* fullscreen navigation */
 }
+/* fullscreen navigation */
