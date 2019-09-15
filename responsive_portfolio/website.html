@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>website.</title>
+  </head>
+
+  <body>
+    <!-- BORDER WITH MARGIN -->
+    <div class="page_size">
+
+      <!-- CONTENT STARTS HERE -->
+
+      <!-- TITLE AND DATE -->
+      <div class="work_title_container">
+        <p class="work_title">web design</p>
+        <div class="work_line"></div>
+        <p class="work_date">FEB 2019</p>
+      </div>
+
+      <!-- LIST OF SKILLS -->
+      <div class="skills_container">
+        <p class="skills" id="skill1">rebranding</p>
+        <p class="skills" id="skill2">information organization</p>
+        <p class="skills" id="skill3">wix web editor</p>
+      </div>
+
+      <!-- WORK IMAGE -->
+      <img class="work_img" src="web.gif" alt="NYU Motorsports is written on top of a moving background image of off road racing competition">
+
+      <!-- SCROLL DOWN ICON -->
+      <a href="#page_jump"><img class="scroll_icon" src="scroll.png" alt="upside down arrow icon" width="70px"></a>
+
+      <!-- NAVIGATION POP UP EFFECT SOURCE: w3school-->
+      <div class="popup" onclick="myFunction()">
+
+        <!-- pop up that appears -->
+        <span class="popuptext" id="myPopup">
+          <div class="menu">
+            <a href="about.html" class="menu_link"><p class="menu_it" id="about">about</p></a>
+            <a href="deus.html" class="menu_link"><p class="menu_it" id="project1">brand concept</p></a>
+            <a href="baja.html" class="menu_link"><p class="menu_it" id="project2">client work</p></a>
+            <a href="explore.html" class="menu_link"><p class="menu_it" id="explore">exploration</p></a>
+
+            <!-- ANIMOJI BACKGROUND -->
+            <div  class="menu_link"><div class="menu_it" id="home_icon"><img src="home_3.jpg" alt="animoji of Jei smiling" width="100px"></div></div>
+            <!-- HOVER TEXT + LINK -->
+            <a href="index.html" class="menu_link" id="home"><p id="home_text">home</p></a>
+          </div>
+        </span>
+
+        <!-- hamburger icon -->
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- FOR SCROLL ICON LINK -->
+      <div id="page_jump"></div>
+
+      <!-- SECOND PAGE -->
+      <!-- LONGER PAGE still in page_size-->
+      <div class="page_size" id="work_size">
+
+        <!-- WEBSITE SCREEN RECORDING -->
+        <video id="web_vid" src="web_long.mp4" autoplay loop controls poster="posterimage.jpg"></video>
+
+        <!-- each skill_description has title and text -->
+        <div class="skill_description">
+          <p class="skill_text" id="skill_text_default">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar arcu a neque viverra bibendum. Etiam finibus massa quis DEFAULT TEXT PLACE. Sed ullamcorper nec sapien eget condimentum. Nullam sollicitudin lacus ut felis lobortis, at accumsan libero finibus. Donec orci turpis, luctus sit amet tempus eget, egestas ut nulla.</p>
+        </div>
+
+        <div class="skill_description">
+          <p class="skill_title">information organization</p>
+          <p class="skill_text">NYU Motorsports has 3 years of history with numerous data and numbers from the competitions, car designs and budget. It was a great opportunity for me to work with not only a large pool of information but also information of different types. I was frequently faced with types of information that I wasn’t very familiar with. I would ask questions like, “what would be a simple and viewer friendly way to organize this table of statistics, budget, rankings, team structure, car renders, and etc.”</p>
+        </div>
+
+        <!-- FIRST SKILL ON THE LIST -->
+        <div class="skill_description">
+          <p class="skill_title" id="skill_title2">rebranding</p>
+          <p class="skill_text">The media lead wanted to try out a new brand image. He already had some ideas in terms of colors and typefaces in his mind so I took that and developed a website layout. I was lucky to be part of this rebranding process because you cannot experience something like this with companies and brands outside of school as a beginner designer. </p>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Pop up animation JS SOURCE: w3school -->
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+  </body>
+
+</html>

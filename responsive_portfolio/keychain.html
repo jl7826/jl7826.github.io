@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>keychain.</title>
+  </head>
+
+  <body>
+    <!-- BORDER WITH MARGIN -->
+    <div class="page_size">
+
+      <!-- CONTENT STARTS HERE -->
+
+      <!-- TITLE AND DATE -->
+      <div class="work_title_container">
+        <p class="work_title">keychain design</p>
+        <div class="work_line"></div>
+        <p class="work_date">JAN 2019</p>
+      </div>
+
+      <!-- LIST OF SKILLS -->
+      <div class="skills_container">
+        <p class="skills" id="skill1">client work</p>
+        <p class="skills" id="skill2">collaboration</p>
+      </div>
+
+      <!-- WORK IMAGE -->
+      <img class="work_img" src="keychain.png" alt="logo of deus">
+
+      <!-- SCROLL DOWN ICON -->
+      <a href="#page_jump"><img class="scroll_icon" src="scroll.png" alt="upside down arrow icon" width="70px"></a>
+
+      <!-- NAVIGATION POP UP EFFECT SOURCE: w3school-->
+      <div class="popup" onclick="myFunction()">
+
+        <!-- pop up that appears -->
+        <span class="popuptext" id="myPopup">
+          <div class="menu">
+            <a href="about.html" class="menu_link"><p class="menu_it" id="about">about</p></a>
+            <a href="deus.html" class="menu_link"><p class="menu_it" id="project1">brand concept</p></a>
+            <a href="baja.html" class="menu_link"><p class="menu_it" id="project2">client work</p></a>
+            <a href="explore.html" class="menu_link"><p class="menu_it" id="explore">exploration</p></a>
+
+            <!-- ANIMOJI BACKGROUND -->
+            <div  class="menu_link"><div class="menu_it" id="home_icon"><img src="home_3.jpg" alt="animoji of Jei smiling" width="100px"></div></div>
+            <!-- HOVER TEXT + LINK -->
+            <a href="index.html" class="menu_link" id="home"><p id="home_text">home</p></a>
+          </div>
+        </span>
+
+        <!-- hamburger icon -->
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+
+      <!-- FOR SCROLL ICON LINK -->
+      <div id="page_jump"></div>
+
+      <!-- SECOND PAGE -->
+      <!-- LONGER PAGE still in page_size-->
+      <div class="page_size" id="work_size">
+
+        <!-- WORK PROGRESS SLIDESHOW -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="keychain1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="keychain2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="keychain3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="keychain4.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+
+          <ol class="carousel-indicators" id="carousel_indi">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+
+          <div class="carousel_controls">
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- each skill_description has title and text -->
+        <div class="skill_description">
+          <p class="skill_title">collaboration</p>
+          <p class="skill_text">This keychain was meant to be sent out to those who participated in Rising Violets, an NYU hosted fundraising program. Therefore, it was important to communicate with the team on what brand image that they want to build in the future and what kind of impression that the team wants to give to their donors. I collaboratively worked with the media team heads and other graphic designers in the team to come up with the initial idea and proceeded from there. </p>
+        </div>
+
+        <!-- FIRST SKILL ON THE LIST -->
+        <div class="skill_description">
+          <p class="skill_title" id="skill_title2">client work</p>
+          <p class="skill_text">Working with a brand/organization that had been created by someone else required me to research and understand the image that the team wanted to strive for and the design language that the teams had been using before. Before working on any design projects for this team, I looked through all of their previous media projects that attempt to communicate the brand image. </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Pop up animation JS SOURCE: w3school -->
+    <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+  </body>
+
+</html>

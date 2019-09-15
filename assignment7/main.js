@@ -23,7 +23,7 @@ function areaOfCircle (radius){
   return ans;
 }
 
-let display = document.getElementById('solution')
+let display = document.getElementById('solution');
 
 document.getElementById('square-button').addEventListener('click',function(){
   let user = document.getElementById('square-input').value;
